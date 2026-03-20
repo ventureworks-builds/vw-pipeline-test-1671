@@ -1,0 +1,6 @@
+INSERT INTO test_items (id, title)
+VALUES
+  ('a0000000-0000-0000-0000-000000000001', 'Pipeline Test Item 1'),
+  ('a0000000-0000-0000-0000-000000000002', 'Pipeline Test Item 2'),
+  ('a0000000-0000-0000-0000-000000000003', 'Pipeline Test Item 3')
+ON CONFLICT (id) DO NOTHING;
